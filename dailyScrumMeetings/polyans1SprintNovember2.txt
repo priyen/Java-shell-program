@@ -1,0 +1,11 @@
+What did I do last time?
+- Finished A2A with my team
+
+What do I plan to do now?
+- Start working on the get url command
+- Document all the methods written with Javadoc
+- Update CRC cards
+- Ensure unit tests (JUnit) are written as project is being worked on (not all in the end)
+
+Am I blocked on anything?
+- Need to discuss design with the whole team and update our CRC Cards

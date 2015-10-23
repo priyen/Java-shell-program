@@ -1,0 +1,9 @@
+What did I do last time?
+	- Finalized a filesystem design to base command classes around
+	- Completed first revision of CommandParser Class
+
+What do I plan to do now?
+	- Start working on Copy and Move classes.
+
+Am I blocked on anything?
+	- Figure out how move and copy classes may use inheritance inorder to keep design efficient. 

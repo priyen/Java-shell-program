@@ -1,0 +1,10 @@
+What did I do last time?
+- Write basic code for file class (will be included in CRC design regardless if not finalized)
+- Contribute code to JShell command parsing
+
+What do I plan to do now?
+- Write basic code for filesystem class (will be included in CRC design regardless if not finalized)
+- Write basic code for folder class
+ 
+Am I blocked on anything?
+- Not yet as I am writing the "back-end" classes

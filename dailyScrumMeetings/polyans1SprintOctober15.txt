@@ -1,0 +1,9 @@
+What did I do last time?
+	- finalized CRC card design
+	- went over implementation/design details
+
+What do I plan to do now?
+	- integrate/combine our JShell's to create a backend for the shell
+
+Am I blocked on anything?
+	- Need FileSystem to be running

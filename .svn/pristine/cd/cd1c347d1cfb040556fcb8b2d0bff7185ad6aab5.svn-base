@@ -1,0 +1,13 @@
+What did I do last time?
+- Modify FileSystem to act more like a "root" folder along and tree structure vs parent-child directory tracking
+- Modify Folder class to use Hashmap's instead of arrays
+- Added a lot of useful methods in FileSystem that will be used by other classes
+- Made FileSystem non-static
+- Made the mkdir command class
+- Group meeting in person to discuss things
+
+What do I plan to do now?
+- Contribute to command parser (try and make a method that converts paths with special symbols like /../.. to paths with text only
+ 
+Am I blocked on anything?
+- Nothing blocking my progress at this moment

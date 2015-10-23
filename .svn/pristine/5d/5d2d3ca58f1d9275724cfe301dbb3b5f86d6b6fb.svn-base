@@ -1,0 +1,9 @@
+Class name: CommandPushPopD
+
+Responsibilities:
+* Switch directories to the one pushed and save the previous working directory to a stack
+* Give the user the option to go back to previous directory by popping the directory from a stack
+
+Collaborators:
+* FileSystem
+* CommandParser

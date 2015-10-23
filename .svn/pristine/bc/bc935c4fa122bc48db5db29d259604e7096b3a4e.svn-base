@@ -1,0 +1,100 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import java.io.ByteArrayInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import org.junit.Before;
+import org.junit.Test;
+
+import driver.*;
+
+public class CommandRmTest {
+  FileSystem fs;
+  String command;
+  String[] arguments;
+  String [] flag;
+  
+  @Before
+  public void setUp() throws Exception {
+    fs = new FileSystem();
+  }
+
+  @Test
+  public void removeFolderInRoot() throws IOException {
+    command = "mkdir folder1";
+    arguments = CommandParser.getArgs(command);
+    CommandMkdir.mkdir(fs,arguments);
+    boolean folderCreated = false; 
+    boolean folderRemoved = false; 
+    //Creation was successful
+    if(fs.getFolderFromPath("/folder1")!= null){
+      folderCreated = true;
+    }
+    String inputData = "y";
+    InputStream stream = new ByteArrayInputStream(inputData.getBytes());
+    System.setIn(stream);
+
+    
+    command = "rm folder1";
+    arguments = CommandParser.getArgs(command);
+    flag = CommandParser.getFlags(command);
+    CommandRm.rm(flag, arguments[0], fs );
+    
+
+    
+    //Folder was Removed
+    if(fs.getFolderFromPath("/folder1")== null){
+      folderRemoved = true;
+    }
+    assertEquals(true, folderRemoved && folderCreated);    
+  }
+  
+
+  public void removeOneSubFolder() throws IOException {
+    command = "mkdir folder1";
+    arguments = CommandParser.getArgs(command);
+    CommandMkdir.mkdir(fs,arguments);
+    
+    command = "mkdir folder1/folder2";
+    arguments = CommandParser.getArgs(command);
+    CommandMkdir.mkdir(fs,arguments);
+    
+    command = "mkdir folder1/folder3";
+    arguments = CommandParser.getArgs(command);
+    CommandMkdir.mkdir(fs,arguments);
+    
+    boolean folderCreated = false; 
+    boolean folderRemoved = false; 
+    //Creation was successful
+    if(fs.getFolderFromPath("/folder1/folder2")!= null){
+      folderCreated = true;
+    }
+
+    String inputData = "y,y,y,y";
+    InputStream stream = new ByteArrayInputStream(inputData.getBytes());
+    
+    System.setIn(stream);
+    System.in.read();
+    System.in.read();
+    System.in.read();
+
+    
+    command = "rm folder1";
+    arguments = CommandParser.getArgs(command);
+    flag = CommandParser.getFlags(command);
+    CommandRm.rm(flag, arguments[0], fs );
+    
+
+    
+    //Folder was Removed
+    if(fs.getFolderFromPath("/folder1/folder2")== null){
+      folderRemoved = true;
+    }
+    assertEquals(true, folderRemoved && folderCreated);    
+  }
+
+
+}

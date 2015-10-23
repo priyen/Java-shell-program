@@ -1,0 +1,45 @@
+*Note all Sprints were committed on time/as due; (SVN timestamps may be checked for proof)
+*At the end we did minor modifications to the format of each sprint
+to allow easy understanding/marking of them.
+=======================================
+
+//Sprint 2 Backlog.  
+October 16 to October 20
+
+
+Product Backlog items to be implemented:
+a) As a JShell user I can view my current working directory at any time and at any location
+(Estimated time to complete: 2 hours)
+
+b) As a JShell user I can change directories, provided they exist
+(Estimated time to complete: 2 hours)
+ 
+c) As a JShell user I can see what current files and folders are in my filesystem
+(Estimated time to complete: 1 hour)
+
+d) As a JShell user I can create files
+	- With files I am able to freely choose between overwriting or appending to them 
+(Estimated time to complete: 7 hours)
+ 
+
+Specific tasks to be accomplished:
+a-1. (CommandLs) Prototype commands/create classes ls, pwd/ make appropriate changes to class CommandParser
+a-2  (CRC) Update CRC design 
+b-1. (CommandMan) Fully implement manual for commands (man) 
+c-1. (File/Folder) Finish implementing framework for file/folder class
+d-1. (CommandEcho) Create echo class and contribute to file/folder classes accordingly
+
+
+These tasks are assigned as follows:
+
+User: Dmitry
+Tasks: a-1, a-2
+
+User: Waleed
+Tasks: b-1
+
+User: Priyen
+Tasks: c-1
+
+User: Kamal
+Tasks: d-1

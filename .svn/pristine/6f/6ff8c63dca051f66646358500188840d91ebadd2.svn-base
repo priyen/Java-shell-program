@@ -1,0 +1,11 @@
+What did I do last time?
+- Fixed echo related issues, it was failing for a lot of test cases and re-wrote how it parses and get's arguments in CommandParser specifically for echo.
+- jUnit for classes: CommandMkdir, FileSystem, CommandCd, CommandPwd
+- Removed redundant code in some classes that wasn't taking advantage of some methods in FileSystem
+- Finalize project, finishing touches, comments, etc
+
+What do I plan to do now?
+- Project is done
+
+Am I blocked on anything?
+- Project is done

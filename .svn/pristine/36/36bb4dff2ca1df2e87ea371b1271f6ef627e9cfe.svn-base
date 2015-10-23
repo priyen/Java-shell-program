@@ -1,0 +1,126 @@
+// **********************************************************
+// Assignment2:
+// UTOR user_name1: polyans1
+// UTOR user_name2: khanwal1
+// UTOR user_name3: patelp57
+// UTOR user_name4: aslamkam
+//
+// Author1: Dmytro Polyanskyy
+// Author2: Waleed Khan
+// Author3: Priyenbhai Patel
+// Author4: Kamal Aslam
+//
+//
+// Honor Code: I pledge that this program represents my own
+// program code and that I have coded on my own. I received
+// help from no one in designing and debugging my program.
+// I have also read the plagiarism section in the course info
+// sheet of CSC 207 and understand the consequences.
+// *********************************************************
+package driver;
+import java.util.Scanner;
+
+/**
+ * This class provides the JShell UI,takes in 
+ * input commands from the user and displays the 
+ * results of each command. 
+ * 
+ * @author Waleed, Dmitry, Priyen, Kamal
+ *
+ */
+public class JShell {
+
+  /**
+   * This is where the JShell begins, takes user input
+   * and also where the JShell terminates.
+   * @param args: default for main function
+   */
+  public static void main(String[] args) {
+    
+    /**
+     * Creating a FileSystem (fs) instance object
+     */
+    FileSystem fs = new FileSystem();
+    String input = "";
+    String command = "";
+    String[] arguments = new String[0];
+    Scanner userInput = new Scanner(System.in);
+     
+    //keep prompting for input until exit command is given by user
+    while(input != "exit"){
+      System.out.print("/# ");
+      input = userInput.nextLine();
+      
+      // deals when user enters nothing
+      if (input.equals("")) 
+      {
+        continue;
+      }
+      if (input.equals("exit"))
+      {
+        System.out.println("JShell Terminated");
+        userInput.close();
+        break;
+      }
+      if(CommandParser.validCommand(input))
+      {
+        command = CommandParser.getCommand(input);
+        arguments = CommandParser.getArgs(input);
+      }
+      else
+      {
+        System.out.println("Invalid command, please try again");
+        continue;
+      }
+      
+      //Calls to appropriate commands are made past here
+      if(command.equals("mkdir") )
+        {
+          CommandMkdir.mkdir(fs, arguments);
+        }
+      if(command.equals("pwd") )
+      {
+        System.out.println(CommandPwd.pwd(fs));
+      }
+      if(command.equals("cd") )
+      {
+        CommandCd.cd(fs, arguments[0]);
+      }
+      if(command.equals("ls") )
+      {
+        if (arguments.length == 0)
+        {
+          System.out.println(CommandLs.CommandLs(fs, null));
+        }
+        else if(arguments.length == 1) {
+          System.out.println(CommandLs.CommandLs(fs, arguments[0]));
+        }
+        else
+        {
+          // adding functionality for ls to accept multiple arguments
+          int totalArgs = arguments.length;
+          for (int i=0; i < totalArgs; i++){
+            System.out.println(arguments[i]+":");
+            System.out.println(CommandLs.CommandLs(fs, arguments[i]));
+          }
+        }
+      }
+      if(command.equals("echo")){
+        CommandEcho.echo(fs, arguments);
+      }
+      if(command.equals("man")){
+        CommandMan.man(fs, arguments);
+      }
+      if(command.equals("mv")){
+        CommandMv.objectMove(arguments[0], arguments[1], fs);
+      }
+      if(command.equals("cp")){
+        CommandCp.objectCopy(arguments[0], arguments[1], fs);
+      }
+      if (command.equals("cat")){
+        System.out.println(CommandCat.CommandCat(arguments[0], fs));
+      }         
+    }
+  }
+}
+

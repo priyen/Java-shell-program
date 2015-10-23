@@ -1,0 +1,11 @@
+What did I do last time?
+	- Completed 2A for Assignment with team
+
+What do I plan to do now?
+	- Look into command parser and modify as required
+	- Look into new commands that need to be implemented
+	and what possible argument types are
+	- Look into how commands from 2A are to be modified for 2B
+
+Am I blocked on anything?
+	- Need to finalize updated CRC cards with team 

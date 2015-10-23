@@ -1,0 +1,1 @@
+http://brutaldev.com/post/2011/10/23/Generating-statistics-from-SVN.aspx

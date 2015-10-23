@@ -1,0 +1,48 @@
+*Note all Sprints were committed on time/as due; (SVN timestamps may be checked for proof)
+*At the end we did minor modifications to the format of each sprint
+to allow easy understanding/marking of them.
+=======================================
+
+//Sprint 4 Backlog.  
+October 24 to October 28
+
+
+Product Backlog items to be implemented:
+a) - As a JShell user I can copy files and folders throughout my filesystem
+	- I want to also be able to specify a name to where I am copying the file too
+(Estimated time to complete: 4 hours)
+
+b) As a JShell user I can move files and folders throughout my filesystem
+	- I want to also be able to specify a name to where I am moving the file too
+(Estimated time to complete: 4 hours)
+
+c) As a JShell user I can see the contents of a file
+(Estimated time to complete: 2 hours)
+
+d) As a JShell user, the shell does tells prevents and tells me when I make invalid commands like creating 
+	directories with the same name, trying to change/move/copy/manipulate a non-existent directory etc
+(Estimated time to complete: 5 hours)
+
+
+Specific tasks to be accomplished:
+a-1  (CommandMv) Fix error in change mv
+b-1  (CommandCp) Implement cp command 
+b-2  (CommandMv) Implement/Assist in fixing mv command
+c-1  (CommandCat) Implement cat 
+c-2  (JUnit) Create JUnit test folder along with JUnit tests
+d-1. (CommandEcho) Fix echo implementation
+
+
+These tasks are assigned as follows:
+
+User: Priyen
+Tasks: a-1
+
+User: Waleed
+Tasks: b-1, b-2
+
+User: Dmitry
+Tasks: c-1, c-2
+
+User: Kamal
+Tasks: d-1

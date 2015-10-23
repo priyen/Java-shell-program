@@ -1,0 +1,8 @@
+Class name: CommandCd
+
+Responsibilities: 
+* change the current directory as per user's request
+
+Collaborators:
+* FileSystem
+* CommandParser

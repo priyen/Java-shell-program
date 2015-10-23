@@ -1,0 +1,10 @@
+Class name: File
+Parent class: none
+Subclasses: None
+
+Responsibilities:
+	- store text and location of itself
+	- return location of File if asked
+
+Collaborators:
+	- Folder

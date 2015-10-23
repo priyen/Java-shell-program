@@ -1,0 +1,16 @@
+What did I do last time?
+- Make Ls work for flag -r
+- Helped with CommandParser, specifically getFlags function
+- Modified jShell to better handle flags
+- Started on grep command class
+- Made a class called outPrintStream to capture redirection
+- Modified all classes to use outPrintStream instead of System.out
+- Made and tested and ensured redirection works with appropriate commands
+
+What do I plan to do now?
+- Make all error messages use stderr instead of stdout
+- Fully finish grep command class
+- Continue to debug LS for "double line issues" 
+
+Am I blocked on anything?
+- Nothing blocking progress at the moment

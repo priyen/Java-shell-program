@@ -1,0 +1,49 @@
+
+//Sprint 8 Backlog  
+November 10 to November 14
+
+
+Product Backlog items to be implemented:
+
+
+a) - As a JShell user I can save previously visited directories so that I can return to them
+quickly by removing the last visited directory
+(Estimated time to complete: 5 hours)
+
+b) - As a JShell user I can delete a directory and I am prompted whether I would 
+like to remove each content inside the directory (provided it contains them)
+	- I can also specify to not confirm whether I want to remove and simply delete it
+(Estimated time to complete: 5 hours)
+
+c) - As a JShell user I can delete files that are in my FileSystem 
+(Estimated time to complete: 3 hours)
+
+d)- As a JShell user I can search for regular expressions
+	- I can search for a regular expressions in a file
+	- I can search for regular expressions in a directory by looking at all the files within it
+(Estimated time to complete: 7 hours (BONUS QUESTION))
+
+
+Specific tasks to be accomplished:
+a-1  (JShell, pushD) - Finish push directory capability
+a-2  (JShell, popD) - Finish popD command for directories
+b-1  (JShell, CommandLs) - Format CommandLs so that it lists all the contents in a directory recursively in the correct format
+b-2  (JShell, Redirect) -  Format so that redirection displays correct
+c-1  (JShell, CommandRm) - Make sure remove is functioning properly/format the remove command with correct redirection on user input (y/n)
+d-1  (JUnit - CommandPushPopD) Create JUnit tests for the CommandPushPopD
+d-2  (JUnit - CommandGrep) Create JUnit tests for CommandGrep
+
+
+These tasks are assigned as follows:
+
+User: Dmitry 
+Tasks: a-1, a-2
+
+User: Priyen
+Tasks: b-1, b-2
+
+User: Waleed
+Tasks: c-1
+
+User: Kamal
+Tasks: d-1, d-2

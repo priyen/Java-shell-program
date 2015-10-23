@@ -1,0 +1,11 @@
+What did I do last time?
+	- Discussed and finalized current CRC card and design
+	- Wrote out text files which are to be used for the man
+ 	  command, yet to be uploaded. 
+
+What do I plan to do now?
+	- Assist with Jshell and FileSystem Classes.
+
+Am I blocked on anything?
+	- FileSystem class, which stores the actual folder and file structure needs to be finalized inorder to determine how 
+	  commands will be manipulating folders and files.

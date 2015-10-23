@@ -1,0 +1,12 @@
+What did I do last time?
+	- Helped debug echo command, which is now functional
+
+What do I plan to do now?
+	- Complete Copy and Move Class
+	- Look into implementing reflection in our design
+	as was taught in the recently concluded Lab
+
+Am I blocked on anything?
+	- Look into advice given during the TA demo, and prevent the overuse of uneeded static commands
+	- Need to start Junit Testing. 
+	- Need to read more about reflection and the proper use of the concept.

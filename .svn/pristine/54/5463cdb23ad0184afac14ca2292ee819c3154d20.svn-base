@@ -1,0 +1,9 @@
+Class name: CommandList
+
+Responsibilities:
+* alphabetize the names of the files/directories
+* list the files/directories in the path
+
+Collaborators:
+* FileSystem
+* CommandParser

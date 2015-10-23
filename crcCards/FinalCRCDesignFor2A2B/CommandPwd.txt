@@ -1,0 +1,9 @@
+Class name: CommandPwd
+
+Responsibilities:
+* Determines and tells the user the current working directory
+* (including the whole path)
+
+Collaborators:
+* FileSystem
+* CommandParser

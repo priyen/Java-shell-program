@@ -1,0 +1,7 @@
+What did I do last time?
+	- discussed with my group on how to change the crc design
+	- coded an alternate design to show what I meant
+What will I do next?
+	- start coding a couple of cmd classes
+Am I blocked on anything?
+	- need filesystem and folder to be modified to agree to 	the new design all of us have agreed upon

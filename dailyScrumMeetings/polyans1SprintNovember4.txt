@@ -1,0 +1,9 @@
+What did I do last time?
+- Discussed design for A2B with team
+
+What do I plan to do now?
+- Get the get url command working
+- Update CRC cards
+
+Am I blocked on anything?
+- Still haven't been able to get together with whole team and update our CRC Cards

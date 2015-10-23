@@ -1,0 +1,10 @@
+What did I do last time?
+- Contributed to code for Classes: File, Folder
+- Wrote class FileSystem
+
+What do I plan to do now?
+- Start working on some commands classes
+- Test basic functionality of FileSystem class
+ 
+Am I blocked on anything?
+- Testing FileSystem without a jShell is difficult, but will do it by making a alternative temporary 'main' program to test basic functionality

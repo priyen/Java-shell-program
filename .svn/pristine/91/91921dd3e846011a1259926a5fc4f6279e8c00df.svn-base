@@ -1,0 +1,10 @@
+What did I do last time?
+- Start working on some commands classes
+- Test basic functionality of FileSystem class
+
+What do I plan to do now?
+- Modify FileSystem to act more like a "root" folder along and tree structure vs parent-child directory tracking
+- Modify Folder class to use Hashmap's instead of arrays
+ 
+Am I blocked on anything?
+- Undecisiviesness about responsibility of FileSystem class (to be decided tomorrow at a group meeting)

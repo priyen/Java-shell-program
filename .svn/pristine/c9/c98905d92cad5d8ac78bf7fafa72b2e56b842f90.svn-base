@@ -1,0 +1,10 @@
+What did I do last time?
+- Fixed a few bugs in FileSystem relating to getting paths for files at root.
+- Modified File Class to remove ".txt" extensions
+
+What do I plan to do now?
+- Helpout with mv command class
+- Try implementing some things from latest Lab into the assignment
+
+Am I blocked on anything?
+- Nothing, progress seemes good overall for the project

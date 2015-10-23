@@ -1,0 +1,11 @@
+What did I do last time?
+- Make all error messages use stderr instead of stdout
+- Fully finish grep command class
+- Continue to debug LS for "double line issues" 
+
+What do I plan to do now?
+- Continue work on grep (found some issues)
+- Help out with fixing "extra line" issues with redirection
+
+Am I blocked on anything?
+- need grep jUnits

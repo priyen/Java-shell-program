@@ -1,0 +1,11 @@
+What did I do last time?
+- Fully implemented pushD
+- Fully implemented popD
+- Modified CommandCd and JShell to work with new commands pushd/popd
+
+What do I plan to do now?
+- Make sure all commands are working properly
+- Ensure JUnits get completed
+
+Am I blocked on anything?
+- Need JUnits to be done to prove correctness

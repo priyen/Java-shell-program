@@ -1,0 +1,10 @@
+What did I do last time?
+- Fully implemented get url command with error checking
+- Modified commandparser and JShell to work with new commands
+
+What do I plan to do now?
+- Work on pushD, popD commands
+- Update CRC cards
+
+Am I blocked on anything?
+- Nope had a great sprint!

@@ -1,0 +1,11 @@
+What did I do last time?
+- Fixed my previous errors in pushD/popD
+- Small changes in get command
+- Updated CRC design
+
+What do I plan to do now?
+- Make sure PB is up to date
+- Ensure A2B functions properly/JUnits are thorough and pass all tests
+
+Am I blocked on anything?
+- Redirection is still not working as we all hope (small bugs)

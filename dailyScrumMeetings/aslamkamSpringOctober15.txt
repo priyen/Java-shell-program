@@ -1,0 +1,9 @@
+What did I do last time?
+	- convered with group members over the crc design
+	- conclusion: me and Priyen's crc cards are going to be 	  used
+
+What do I plan to do now?
+	- Write the Jshell.java. I have reasoned it with my group members that with so many people working independtly that it'd be best to write the class that unifies all of our works. That way we can check if we are on track or does the system need to be changed.
+
+Am I blocked on anything?
+	- nothing, all things are good to go.

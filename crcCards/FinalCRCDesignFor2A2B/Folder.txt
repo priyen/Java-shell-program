@@ -1,0 +1,12 @@
+Class name: Folder
+Parent class: FileSystem
+Subclasses: None
+
+Responsibilities:
+	- store files and other folders
+	- return location of folder if asked
+
+Collaborators:
+	- none
+
+

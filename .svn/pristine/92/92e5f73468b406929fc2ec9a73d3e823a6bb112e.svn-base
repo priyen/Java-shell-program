@@ -1,0 +1,118 @@
+package driver;
+
+import java.util.Arrays;
+import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+public class CommandGrep {
+  public static String CommandGrep(FileSystem fs, String regex, 
+      String[] paths, String[] flags)
+  {
+   String c = "";
+   boolean foldersAllowed = false;
+   if (Arrays.asList(flags).size() == 1)
+   {
+     if (Arrays.asList(flags).contains("-r"))
+     {
+       foldersAllowed = true;
+     }
+     else
+     {
+       System.err.println("grep: inappropriate flag use");
+       return "@@DONOTPRINT@@";
+     }
+   }
+   for(int index = 0; index < paths.length; index++)
+   {
+     if (foldersAllowed)
+     {
+       Folder f = fs.getFolderFromPath(paths[index]);
+       File file;
+       if (f == null)
+       {
+         file = fs.getFileFromPath(paths[index]);
+         if (file != null)
+         {
+           System.err.println("grep: -r flag supplied, "
+               + "path cannot be to files");
+           return "@@DONOTPRINT@@";
+           //c = c + getMatchingLines(regex, file);
+         }
+         else
+         {
+           System.err.println("grep: path doesn't exist: " + paths[index]);
+           return "@@DONOTPRINT@@";
+         }
+       }
+       else
+       {
+         c = c + getMatchingLinesForAllFilesInFolder(regex, f);
+       }
+     }
+     else
+     {
+       File file = fs.getFileFromPath(paths[index]);
+       if (file != null)
+       {
+         c = c + getMatchingLines(regex, file);
+       }
+       else
+       {
+         System.err.println("grep: path doesn't exist: " + paths[index]);
+         return "@@DONOTPRINT@@";
+       }
+     }
+   }    
+   if (c.contains("\n"))
+   {
+     return c.substring(0, c.lastIndexOf("\n"));
+   }
+   else
+   {
+     return c;
+   }
+  }
+  
+  public static String getMatchingLinesForAllFilesInFolder(String regex, 
+      Folder f)
+  {
+    String c = "";
+    HashMap<String, Object> folders = f.getFolders();
+    HashMap<String, Object> files = f.getFiles();
+    for(String key:folders.keySet())
+    {
+      //to account for fact that fs has a reference of itself in its folders 
+      //hashmap
+      if (folders.get(key) != f)
+      {
+          c = c + getMatchingLinesForAllFilesInFolder(regex, (Folder) 
+          folders.get(key));
+      }
+    }
+    for(String key:files.keySet())
+    {
+      c = c + getMatchingLines(regex, (File) files.get(key));
+    }
+    return c;
+  }
+  
+  public static String getMatchingLines(String regex, File file)
+  {
+    String s = "";
+    if (file != null)
+    {
+      String[] lines = file.toString().split("\n");
+      Pattern pattern = Pattern.compile(regex);
+      for(int i = 0; i < lines.length; i++)
+      {
+        Matcher matcher = pattern.matcher(file.toString());
+        if (matcher.find())
+        {
+          s = s + file.getDir() + ":" + lines[i] + "\n";
+        }
+      }
+    }
+    return s;
+  }
+}

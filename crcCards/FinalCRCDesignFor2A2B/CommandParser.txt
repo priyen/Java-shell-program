@@ -1,0 +1,8 @@
+Class name: CommandParser
+parent class: none
+subclass: none
+
+Responsibilities:
+	- parses a string to recognize commands and arguments
+
+Collaborators: none

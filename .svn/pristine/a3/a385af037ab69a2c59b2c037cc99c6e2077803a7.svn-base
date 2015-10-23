@@ -1,0 +1,42 @@
+package driver;
+
+/**
+ * This class implements the list command - ls,
+ * which allows the the contents of a directory to be outputted 
+ * to the JShell. 
+ * 
+ * @author Dmitry, Waleed, Kamal, Priyen
+ *
+ */
+public class CommandLs {
+  
+  /**
+   * Shows the contents of a directory - may take in a full 
+   * path or if no path is provided, it uses the current
+   * working directory.
+   * 
+   * @param fs: The FileSystem which needs contents of a directory
+   *    to be shown 
+   * @param path: the path at which the directory is at
+   */
+  public static String CommandLs(FileSystem fs, String path){
+    if (path == null){
+      // no path provided
+      return  fs.getWorkingDirectory().listContents();
+    }
+    else
+    {
+      if(fs.getFolderFromPath(path) != null)
+      {
+          // path is provided
+          return fs.getFolderFromPath(path).listContents();
+      }
+      
+      else
+      {
+        // path does not exist
+        return ("ls: Invalid path");
+      }
+   }
+ }
+}

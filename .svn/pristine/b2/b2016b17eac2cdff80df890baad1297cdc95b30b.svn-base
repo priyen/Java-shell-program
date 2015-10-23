@@ -1,0 +1,9 @@
+Class name: CommandMv
+
+Responsibilities: 
+* move a file from on old location to a new location both of which are 
+* specified as CommandMv arguments
+
+Collaborators:
+* FileSystem
+* CommandParser

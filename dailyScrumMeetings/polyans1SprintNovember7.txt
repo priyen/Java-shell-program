@@ -1,0 +1,10 @@
+What did I do last time?
+- Figured out new design
+- Thought about way to implement new commands (especially grep - the bonus)
+
+What do I plan to do now?
+- Update/finalize CRC cards
+- Work on a few commands (get, ls)
+
+Am I blocked on anything?
+- Was studying for the midterm and didn't have much time for coding

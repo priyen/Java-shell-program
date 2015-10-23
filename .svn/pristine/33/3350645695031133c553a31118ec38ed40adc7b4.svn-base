@@ -1,0 +1,38 @@
+package driver;
+
+import java.net.*;
+import java.io.*;
+
+public class CommandGetUrl {
+
+  // starts off with invalid
+  private static String urlProcess = "invalid";
+
+  public static String CommandGetUrl(String urlToParse, FileSystem fs) {
+    try
+    {
+       URL url = new URL(urlToParse);
+       urlProcess = url.getFile();
+       urlProcess = fileChecker(urlProcess);   
+    }
+    catch(IOException e)
+    {   
+       return "Bad URL: " + urlToParse;
+    }
+    return urlProcess;
+  }
+
+  public static String fileChecker(String urlProcess) {
+    int counter = 0;
+    while (counter < urlProcess.length()) {
+      if (urlProcess.contains("/")){
+        int slashLocater = urlProcess.indexOf("/");
+        urlProcess = urlProcess.substring(slashLocater+1,urlProcess.length());
+      }
+      counter++;
+    }
+    return urlProcess;
+  }
+
+  
+}

@@ -1,0 +1,68 @@
+package test;
+
+import static org.junit.Assert.*;
+
+import java.awt.List;
+import java.util.ArrayList;
+
+import driver.*;
+
+import org.junit.Before;
+import org.junit.Test;
+
+public class CommandGetUrlTest {
+  
+  @Before
+  public void setup(){
+  }
+  @Test
+  public void MakeFileInRootTest() {
+    FileSystem fs = new FileSystem();
+
+    CommandGetUrl.CommandGetUrl("http://www.cs.cmu.edu/~spok/grimmtmp/073.txt"
+        , fs);
+    File f1 = fs.getFileFromPath("/073.txt");
+    assertTrue(f1 != null);
+    
+    String a = f1.toString().split("\n")[0];
+    assertTrue(f1.getName().equals("073.txt"));
+    assertTrue(a.equals("There was once a king who had an illness, "
+        + "and no one believed that he"));
+    assertTrue(f1 != null);
+  }
+
+  @Test
+  public void MakeFileInSubFolderTest() {
+    FileSystem fs = new FileSystem();
+
+
+    String[] args = {"a1"};
+    
+    CommandMkdir.mkdir(fs, args);
+    
+    CommandCd.cd(fs, "a1");
+    CommandGetUrl.CommandGetUrl("http://www.cs.cmu.edu/~spok/grimmtmp/073.txt"
+        , fs);
+    
+    File f1 = fs.getFileFromPath("/a1/073.txt");
+    
+    String a = f1.toString().split("\n")[0];
+    assertTrue(f1.getName().equals("073.txt"));
+    assertTrue(a.equals("There was once a king who had an illness, "
+        + "and no one believed that he"));
+    assertTrue(f1 != null);
+  }  
+  
+  @Test
+  public void MakeHtmlInRootTest() {
+    FileSystem fs = new FileSystem();
+
+    CommandGetUrl.CommandGetUrl("www.ub.edu/web/ub/ca/index.html"
+        , fs);
+    File f1 = fs.getFileFromPath("/index.html");
+    assertTrue(f1.getName().equals("index.html.txt"));
+    System.out.print(f1.toString());
+    assertTrue(f1 != null);
+  }
+  
+}

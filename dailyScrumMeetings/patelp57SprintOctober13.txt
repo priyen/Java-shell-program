@@ -1,0 +1,9 @@
+What did I do last time?
+- N/A (first sprint meeting)
+
+What do I plan to do now?
+- Write basic code for file class (will be included in CRC design regardless if not finalized)
+- Contribute code to JShell command parsing
+ 
+Am I blocked on anything?
+- Need a finalized CRC design to make progress (without it cannot code relavent things)

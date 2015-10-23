@@ -1,0 +1,7 @@
+What did I do last time?
+	Updated Ls junit tests and started on junit tests for geturls.
+What I intend to do?
+	Complete getUrl tests.
+Am I blocked on anything?
+	The html url provided for testing in the assignment PDF is not working.
+	Need to find a way to test htmls on the get Url command. 

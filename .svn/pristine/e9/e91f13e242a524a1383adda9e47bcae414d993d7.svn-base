@@ -1,0 +1,42 @@
+
+//Sprint 1 Backlog.  
+October 12 to October 16
+
+
+Product Backlog items to be implemented:
+a) As a JShell user I want a continuous input prompt for my commands 
+(Estimated time to complete: 1 hour)
+
+b) As a JShell user I have a way to terminate the JShell when I am done with it
+(Estimated time to complete: 1 hour)
+
+c) As a JShell user I can see a list of commands that are available and a description of their functionalities 
+(Estimated time to complete: 2 hours 
+
+d) As a JShell user I can create a folder or multiple folders anywhere I want 
+(Estimated time to complete: 8 hours) 
+
+Specific tasks to be accomplished:
+a-1. (JShell) Begin coding the structure of the command line interpreter
+a-2. (JShell) Have the shell continually prompt the user for input
+b-1. (JShell) Implement exit command
+b-2. (JShell) Create text listings for man commands
+c-1. (JShell) Parse/Implement mkdir commands
+c-2. (FileSystem) Write the base code for FileSystem
+d-1. (File/Folder) Write the base code for the File and Folder class
+
+
+
+These tasks are assigned as follows:
+
+User: Dmitry
+Tasks: a-1, a-2, a-3
+
+User: Waleed
+Tasks: b-1, b-2
+
+User: Kamal
+Tasks: d-1
+
+User: Priyen
+Tasks: c-1, c-2

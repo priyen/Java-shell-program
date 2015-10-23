@@ -1,0 +1,9 @@
+Class name: CommandRm
+
+Responsibilities:
+* Remove file and/or folders from the file system
+* Give the user the option to recursively delete entire folders
+
+Collaborators:
+* FileSystem
+* CommandParser

@@ -1,0 +1,8 @@
+What did I do last time?
+	-  Discussed possible designs for file system, which is what our file/folder database is based around.
+
+What do I plan to do now?
+	- Meeting tomorrow to finally get a good backbone for the filesystem ready
+
+Am I blocked on anything?
+	- Still having trouble on current implementation of the folder/filesystem

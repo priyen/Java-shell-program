@@ -1,0 +1,48 @@
+
+//Sprint 6 Backlog  
+November 6 to November 10
+
+
+Product Backlog items to be implemented:
+
+
+a) - As a JShell user I want to see all the contents of a directory recursively 
+(Estimated time to complete: 3 hours)
+
+b) - As a JShell user I can save previously visited directories so that I can return to them
+quickly by removing the last visited directory
+(Estimated time to complete: 5 hours)
+
+c) - As a JShell user, I can capture the output of every command which has output into
+a file
+(Estimated time to complete: 6 hours)
+
+d) - As a JShell user I can delete a directory and I am prompted whether I would 
+like to remove each content inside the directory (provided it contains them)
+	- I can also specify to not confirm whether I want to remove and simply delete it
+(Estimated time to complete: 5 hours)
+
+
+Specific tasks to be accomplished:
+a-1  (JShell, pushD) - Create framework a push directory capability
+a-2  (JShell, popD) - Prototype the popD command for directories
+b-1  (JShell, CommandLs) - Update CommandLs so that it lists all the contents in a directory recursively
+b-2  (JShell, Redirect) -  Create functionality for all (able) commands to write their output into a file
+c-1  (JShell, CommandRm) - Fully implement the remove command
+d-1  (JUnit - CommandLs) Create JUnit tests for the updated CommandLs
+d-2  (JUnit - CommandGetUrl) Create JUnit tests for the updated CommandGetUrl
+
+
+These tasks are assigned as follows:
+
+User: Dmitry 
+Tasks: a-1, a-2
+
+User: Priyen
+Tasks: b-1, b-2
+
+User: Waleed
+Tasks: c-1
+
+User: Kamal
+Tasks: d-1, d-2

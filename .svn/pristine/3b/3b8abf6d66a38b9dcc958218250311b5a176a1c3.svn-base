@@ -1,0 +1,10 @@
+What did I do last time?
+- Contribute to command parser (try and make a method that converts paths with special symbols like /../.. to paths with text only (but added this code functionality to FileSystem and Folder class) - getFolderFromPath and getFileFromName return null when path doesnt exist
+- Made mkdir work with ".." paths and also error when a path doesn't exist
+
+What do I plan to do now?
+- Helpout with jShell as that is something I also need
+- Helpout with echo class
+
+Am I blocked on anything?
+- Need a more functional jShell to test various mkdir and filesystem functionalities

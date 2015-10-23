@@ -1,0 +1,93 @@
+===========================================================================================
+Backlog Item:
+===========================================================================================
+
+- As a JShell user I can see all the subdirectories and files of a directory 
+(Estimated time to complete: 3 hours)
+
+- As a JShell user I can retrieve a file from a URL and add the contents of it 
+to my current working directory 
+(Estimated time to complete: 4 hours)
+
+- As a JShell user I can save previously visited directories so that I can return to them
+quickly by removing the last visited directory
+(Estimated time to complete: 5 hours)
+
+- As a JShell user, I can capture the output of every command which has a string
+output and redirect it to a file
+(Estimated time to complete: 6 hours)
+
+- As a JShell user I can delete files that are in my FileSystem 
+(Estimated time to complete: 3 hours)
+
+- As a JShell user I can delete a directory and I am prompted whether I would 
+like to remove each content inside the directory (provided it contains them)
+	- I can also specify to not confirm whether I want to remove and simply delete it
+(Estimated time to complete: 5 hours)
+
+- As a JShell user I can search for regular expressions
+	- I can search for a regular expressions in a file
+	- I can search for regular expressions in a directory by looking at all the files within it
+(Estimated time to complete: 7 hours (BONUS QUESTION))
+
+
+
+===========================================================================================
+Interactive Backlog 
+(Note: This is an optional log created to be a bit more interactive with the commands)
+===========================================================================================
+
+So basically, we have a guy called Max. Max is very picky, he likes things 
+organized. 
+So we told Max, "Okay, we'll create a filesystem that does that for you."
+... In the future Max is trying out our filesystem.
+
+He wonders what type of commands are accessible for him. Max types in "man" 
+into the command line and gets a list of commands which he can enter.
+
+Max types into the command line "mkdir Max".
+Max says: "Cool, this thing allows me to create folders! Now I can store all
+my important stuff inside them, hmmm, but I wonder if its actually there."
+
+Max types in "ls":
+The folder name "Max" pops onto the screen.
+"What else can I do", wonders Max.
+Max decides to create another folder called "Maxy" and types in "cd" to 
+go into it - "Wow" says Max - "this is great".
+
+After all the excitement Max forgets which directory he was in!
+So being the bright young fellow he is, Max discovers the pwd command using 
+the man feature and pinpoints his location in the filesystem.
+
+Max types in "echo cool"
+output: cool
+
+"That's great! Now I don't have to hike to a cave to hear myself echo. But
+I wonder if I can record my echos into a file."
+/# echo "this" >> cool
+/# echo "filesystem" > cool
+/# ls
+cool
+"Now I want to read cool"
+/# cat cool
+filesystem
+
+"Darn it!! I put my cool file into the wrong folder...Let me find a command to move it.."
+Max enters "mv cool Maxy/cool" and moves the file where he wants it.
+
+"Oh my - I wonder if I can copy this file, I know I can get quite 
+careless sometimes!" While in Maxy, Max types in "cp cool coolBackUp" 
+and makes a copy of the file he worked so hard on.
+
+
+"Amazing, I must give a bonus to the guys who designed such an awesome filesystem."
+
+
+
+
+
+
+
+
+
+

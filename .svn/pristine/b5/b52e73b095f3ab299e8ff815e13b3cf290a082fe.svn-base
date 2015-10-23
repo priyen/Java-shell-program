@@ -1,0 +1,10 @@
+What did I do last time?
+	-  Modified JShell
+	-  Created pwd command
+
+What do I plan to do now?
+	- Work on commands (cat, cp , mv)
+
+Am I blocked on anything?
+	- JShell still making errors
+	- CommandParser not parsing all invalid inputs correctly

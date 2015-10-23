@@ -1,0 +1,9 @@
+Class name: CommandGetUrl
+
+Responsibilities:
+* Establish a connection to a URL address and retrieve a text/raw HTML file from it
+* Save the retrieved File into the Filesystem
+
+Collaborators:
+* FileSystem
+* CommandParser

@@ -1,0 +1,9 @@
+Class name: CommandMkdir
+
+Responsibilities: 
+* check that the same named directory does not exist in the specified path
+* create a directory at the specified path
+
+Collaborators:
+* FileSystem
+* CommandParser

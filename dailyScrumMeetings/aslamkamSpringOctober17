@@ -1,0 +1,12 @@
+What did I do last time?
+	- completed file and folder classes
+	- created methods with these classes that will be very useful in commands 
+	relating to pwd, ls, and just dir-related commands
+What I intend to do now?
+	- change the crc design. Its a stupid design that if I stick to, the code 
+	will become very complicated. 
+	- I guess complete other classes and think of an efficient way to implement
+	that does not have a huge blob of system.out.println.
+	
+Am I blocked on anything?
+	- let's see, writing the code for mv and cp will be a huge pain

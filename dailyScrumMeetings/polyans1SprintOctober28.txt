@@ -1,0 +1,11 @@
+What did I do last time?
+- Fixed JShell carryover errors
+- Fixed output errors
+
+What do I plan to do now?
+- Helpout with cp/mv class
+- Helpout with JUnit
+- Make sure backlog is in proper format
+
+Am I blocked on anything?
+- Need to learn JUnit

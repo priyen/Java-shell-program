@@ -1,0 +1,11 @@
+Class name: CommandEcho
+Subclasses : 
+
+Responsibilities: 
+* Takes a string as an argument and adds that string to a new file whose name
+* is specified within the arguments
+* If the file specified already exists, it is overwritten with the new string
+* Also has capabilities to append to file
+
+Collaborators:
+* FileSystem

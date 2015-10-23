@@ -1,0 +1,16 @@
+What did I do last time?
+- Created capability for ls to handle multiple arguments (e.g ls a b c)
+- Created the append in echo (made sure it worked on newlines correctly)
+- Created Javadoc for some methods
+- Made sure commands did not crash - made editions to CommandParser
+- Renamed all commands to be consistent
+
+What do I plan to do now?
+- Create JUnit testing for remaining classes
+- Finish Javadoc
+- Debug code
+- Finalize project and put finishing touches everywhere
+- Need to update CRC design
+
+Am I blocked on anything?
+- Bugs being found in code

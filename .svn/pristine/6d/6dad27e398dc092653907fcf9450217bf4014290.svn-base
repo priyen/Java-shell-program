@@ -1,0 +1,48 @@
+*Note all Sprints were committed on time/as due; (SVN timestamps may be checked for proof)
+*At the end we did minor modifications to the format of each sprint
+to allow easy understanding/marking of them.
+=======================================
+
+//Sprint 3 Backlog.  
+October 20 to October 24
+
+
+Product Backlog items to be implemented:
+a) As a JShell user I can create files
+	- With files I am able to freely choose between overwriting or appending to them 
+(Estimated time to complete: 7 hours)
+
+b) As a JShell user I can change directories, provided they exist
+(Estimated time to complete: 2 hours)
+ 
+c) As a JShell user I can move files and folders throughout my filesystem
+	- I want to also be able to specify a name to where I am moving the file too
+(Estimated time to complete: 4 hours)
+
+d) - As a JShell user I can copy files and folders throughout my filesystem
+	- I want to also be able to specify a name to where I am copying the file too
+(Estimated time to complete: 4 hours)
+
+
+Specific tasks to be accomplished:
+a-1  (CommandMkdir) Fix bug/implement mkdir command
+a-2  (Filesystem) Make sure mkdir is reflected in Filesystem
+b-1. (CommandParser) Create commandParser to manipulate state of files/directories
+b-2  (CommandMv) Fully implement mv and make appropriate changes in Filesystem
+c-1. (CommandCp) Fully implement cp and make appropriate changes in Filesystem
+d-1  Finish/Fix echo STRING >> OUTFILE (the appending function for echo)
+
+
+These tasks are assigned as follows:
+
+User: Priyen
+Tasks: a-1, a-2
+
+User: Waleed
+Tasks: b-1, b-2
+
+User: Dmitry
+Tasks: c-1
+
+User: Kamal
+Tasks: d-1

@@ -1,0 +1,9 @@
+What did I do last time?
+	- First Phase of Command Implementation has started, ls, cd, pwd and exit are now working, given there are no syntax errors.
+
+What do I plan to do now?
+	- Start working on Copy and Move classes, which are more complex than previously thought.
+
+Am I blocked on anything?
+- Better implementation of command parser to handle for syntax errors. 	
+- Figure out how move and copy classes may use inheritance inorder to keep design efficient. Further all possible scenarios when file and folders are being copied.

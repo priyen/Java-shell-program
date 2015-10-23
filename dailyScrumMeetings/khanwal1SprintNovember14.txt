@@ -1,0 +1,9 @@
+What did I do last time?
+	- Modified Rm command so that a user can't delete the cwd
+	- Made various minor fixes and adjustments. 
+
+What do I plan to do now?
+	
+
+Am I blocked on anything?
+	- Most tasks for A2B are complete.

@@ -1,0 +1,13 @@
+Class name: outPrintStream
+parent class: none
+subclass: none
+
+Responsibilities:
+	- call System.out appropriately to print strings
+	- Save and store strings that do not need to be printed 
+	(for redirection purposes).
+
+Collaborators:
+	- System
+	
+	

@@ -1,0 +1,9 @@
+Class name: CommandGrep
+
+Responsibilities:
+* Traverse a path in the FileSystem recursively and search for a regex
+* Give the user the all the results from the search
+
+Collaborators:
+* FileSystem
+* CommandParser

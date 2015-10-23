@@ -1,0 +1,152 @@
+package driver;
+import java.util.Hashtable;
+
+/**
+ * This class works with the Filesystem to process the commands
+ * entered by the JShell user. 
+ * 
+ * @author Dmitry, Waleed, Kamal, Priyen
+ *
+ */
+public class CommandParser {
+  @SuppressWarnings("serial")
+  private static Hashtable<String, Integer> commands = new 
+      Hashtable<String, Integer>()
+  {{
+   put("mkdir", 1);
+   put("cp", 2);
+   put("mv", 2);
+   put("cd", 1);
+   put("cat", 1);
+   put("exit", 0);
+   put("ls", 1);
+   put("pwd", 0);
+   put("echo", 3);  
+   put("man", 1);
+   put ("get", 1);
+  }}; 
+    
+  /**
+   * Determine if the command the user entered is valid 
+   * based on the hashtable argument counts.
+   * 
+   * @param command: user's command 
+   * @return: whether or not command entered is valid (boolean)
+   */
+   public static boolean validCommand(String command){
+    String[] args = getArgs(command);
+    String cmd = getCommand(command);
+    // returns a boolean value
+    return commands.containsKey(cmd) &&
+        validParamCount(cmd, args);
+             
+  }
+   /**
+    * Determines if the number of arguments the user 
+    * supplied to valid for the command in JShell.
+    * 
+    * @param cmd: user's command
+    * @param args: the arguments entered for the command
+    * @return whether or not the number of parameters are valid for command
+    */
+   public static boolean validParamCount(String cmd, String[] args){ 
+     if(cmd.equals("mkdir")){ 
+       return ((args.length) >= commands.get(cmd));
+     }   
+     if(cmd.equals("ls")){ 
+       return ((args.length) >= commands.get(cmd)||
+           (args.length) <= commands.get(cmd));
+     }
+     else if (cmd.equals("echo")){       
+        return (((args.length) == 3)||((args.length == 1))); 
+     }
+     else{
+       return (args.length == commands.get(cmd));
+     }
+   }    
+   
+   /**
+    * Used to retrieve arguments from JShellcommands 
+    * which have only one input parameter.
+    * 
+    * @param command: user entered command
+    * @return: first argument of command
+    */
+   public static String getCommand(String command){
+     String[] args = command.split(" ");
+     //Returns the Command that was entered.
+     return args[0];
+     }
+     
+   //Command Returns a String[] which holds the list of parameters
+   //passed with the command.
+   /**
+    * Used to retrieve arguments from JShell commands which 
+    * have more than one input parameter
+    * 
+    * @param command: user entered command
+    * @return: retrieves more than 1 argument from command 
+    */
+   public static String[] getArgs(String command){
+     String[] cmdWithArgs = command.split(" +");
+     String[] invalid = new String[0];
+     
+     if (cmdWithArgs[0].equals("echo") && (cmdWithArgs.length == 2))
+     {
+         if (cmdWithArgs[1].startsWith("\"") == false || cmdWithArgs[1].
+             endsWith("\"") == false)
+         {
+           return invalid;
+         }
+         String[] args = {cmdWithArgs[1]};
+         return args;
+     }     
+     if(cmdWithArgs[0].equals("echo") && cmdWithArgs.length > 2)
+     {  
+      return getArgsForEcho(command);
+     }
+     else
+     {
+         return java.util.Arrays.copyOfRange
+         (cmdWithArgs, 1, cmdWithArgs.length);
+     }
+    }
+   
+   /**
+    * Used to retrieve arguments from JShell for echo command specifically
+    * 
+    * @param command: user entered command
+    * @return: retrieves more than 1 argument from echo command 
+    */
+   public static String[] getArgsForEcho(String command)
+   {
+     String[] echoArguments = new String[3];
+     String stringWithoutCommand = command.substring(5);
+     if (stringWithoutCommand.startsWith("\"") == false || 
+         (stringWithoutCommand.lastIndexOf("\"") == 
+         stringWithoutCommand.indexOf("\"")))
+     {
+       return new String[0];
+     }
+     String content = stringWithoutCommand.substring(1, 
+         stringWithoutCommand.lastIndexOf("\""));
+     if (stringWithoutCommand.lastIndexOf("\"") ==
+         stringWithoutCommand.length()-1)
+     {
+       String[] args = {content};
+       return args;
+     }
+     String stringStartingWithOperator = stringWithoutCommand.substring(
+         stringWithoutCommand.lastIndexOf("\"")+2);
+     String split[] = stringStartingWithOperator.split(" +");
+     if (split.length > 2)
+     {
+       return new String[0];
+     }
+     echoArguments[0] = content; 
+     echoArguments[1] = split[0];
+     echoArguments[2] = split[1];
+     return echoArguments;
+   }
+     
+}

@@ -1,0 +1,106 @@
+===========================================================================================
+Backlog Item:
+===========================================================================================
+
+- As a JShell user I want a continuous input prompt for my commands 
+(Estimated time to complete: 1 hour)
+
+- As a JShell user I can see a list of commands that are available and a description of their functionalities 
+(Estimated time to complete: 2 hours)
+
+- As a JShell user I can create a folder or multiple folders anywhere I want 
+(Estimated time to complete: 8 hours)
+
+- As a JShell user I can create files:
+	- With files I am able to freely choose between overwriting or appending to them 
+(Estimated time to complete: 7 hours)
+	
+- As a JShell user I can view my current working directory at any time and at any location
+(Estimated time to complete: 2 hours)
+ 
+- As a JShell user I can change directories, provided they exist
+(Estimated time to complete: 2 hours)
+
+- As a JShell user I can view the contents of a file
+(Estimated time to complete: 2 hours)
+
+- As a JShell user I can see what current files and folders are in my filesystem
+(Estimated time to complete: 1 hour)
+
+- As a JShell user, the shell notifies me when I make invalid commands like creating 
+	directories with the same name, trying to change/move/copy/manipulate a non-existent directory etc
+(Estimated time to complete: 5 hours)
+
+- As a JShell user I can move files and folders throughout my filesystem
+	- I want to also be able to specify a name to where I am moving the file to
+(Estimated time to complete: 4 hours)
+	
+- As a JShell user I can copy files and folders throughout my filesystem
+	- I want to also be able to specify a name to where I am copying the file to
+(Estimated time to complete: 4 hours)
+	
+- As a JShell user I have a way to terminate the JShell when I am done with it
+(Estimated time to complete: 1 hour)
+
+
+
+
+===========================================================================================
+Interactive Backlog 
+(Note: This is an optional log created to be a bit more interactive with the commands)
+===========================================================================================
+
+So basically, we have a guy called Max. Max is very picky, he likes things 
+organized. 
+So we told Max, "Okay, we'll create a filesystem that does that for you."
+... In the future Max is trying out our filesystem.
+
+He wonders what type of commands are accessible for him. Max types in "man" 
+into the command line and gets a list of commands which he can enter.
+
+Max types into the command line "mkdir Max".
+Max says: "Cool, this thing allows me to create folders! Now I can store all
+my important stuff inside them, hmmm, but I wonder if its actually there."
+
+Max types in "ls":
+The folder name "Max" pops onto the screen.
+"What else can I do", wonders Max.
+Max decides to create another folder called "Maxy" and types in "cd" to 
+go into it - "Wow" says Max - "this is great".
+
+After all the excitement Max forgets which directory he was in!
+So being the bright young fellow he is, Max discovers the pwd command using 
+the man feature and pinpoints his location in the filesystem.
+
+Max types in "echo cool"
+output: cool
+
+"That's great! Now I don't have to hike to a cave to hear myself echo. But
+I wonder if I can record my echos into a file."
+/# echo "this" >> cool
+/# echo "filesystem" > cool
+/# ls
+cool
+"Now I want to read cool"
+/# cat cool
+filesystem
+
+"Darn it!! I put my cool file into the wrong folder...Let me find a command to move it.."
+Max enters "mv cool Maxy/cool" and moves the file where he wants it.
+
+"Oh my - I wonder if I can copy this file, I know I can get quite 
+careless sometimes!" While in Maxy, Max types in "cp cool coolBackUp" 
+and makes a copy of the file he worked so hard on.
+
+
+"Amazing, I must give a bonus to the guys who designed such an awesome filesystem."
+
+
+
+
+
+
+
+
+
+

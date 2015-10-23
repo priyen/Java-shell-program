@@ -1,0 +1,8 @@
+Class name: CommandCp
+
+Responsibilities:
+* copy a file to a specific location without deleting original file
+
+Collaborators:
+* FileSystem
+* CommandParser

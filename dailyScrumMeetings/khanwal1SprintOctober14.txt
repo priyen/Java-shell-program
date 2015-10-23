@@ -1,0 +1,13 @@
+What did I do last time?
+	- N/A (first meeting)
+
+What do I plan to do now?
+	- Help finalize CRC cards and program design
+	- Look into responsibilities as describes in the sprint backlog
+	- Plan design and code for pwd and ls commands
+	- Look into commands needed for manual, start writing manual for basic
+	  commands.
+
+Am I blocked on anything?
+	- CRC cards need to be finalized by the team
+	

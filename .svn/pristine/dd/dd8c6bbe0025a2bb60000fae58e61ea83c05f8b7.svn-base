@@ -1,0 +1,8 @@
+Class name: CommandMan
+Subclasses : 
+
+Responsibilities: 
+* Displays a set of instructions of how to use commands in JShell
+
+Collaborators:
+* FileSystem

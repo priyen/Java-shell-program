@@ -1,0 +1,92 @@
+package driver;
+
+/**
+ * An extensive set of instructions on how to  
+ * use all the commands in JShell
+ * 
+ * @author Dmitry, Waleed, Priyen, Kamal
+ *
+ */
+public class CommandMan {
+  
+  /**
+   * Displays information about a certain command
+   * in JShell 
+   * 
+   * @param fs: the FileSystem that the command is at
+   * @param args: the argument which stores the command
+   */
+  public static void man(FileSystem fs, String [] args)  {
+    // information for pwd
+    if (args[0].equals("pwd")){
+      System.out.println("pwd: Print the current working directory "
+          + "path (i.e whole absolute path)");
+    }
+    else if (args[0].equals("man")) {
+      //information for the command "man" itself
+      System.out.println("man CMD: shows how to use JShell commands,");
+      System.out.println("Type man CMD where CMD can be: ");
+      System.out.println("ls, mkdir, cd, echo, pwd, cp, mv, cat, exit");
+    }
+    else if (args[0].equals("ls")){
+      // information for the ls command
+      System.out.println("ls PATH: Display the contents of a directory");
+      System.out.println("If no paths are given, print "
+          + "the contents (file or directory) of ");
+      System.out.println("the current directory, with a new line "
+          + "following each of the content (file or directory)");
+    }
+    else if (args[0].equals("mkdir")){
+      // information for the mkdir command
+      System.out.println("mkdir DIR: Create directories, each of which may"
+          + " be relative to the current directory "
+          + "or may be a full path.");
+    }
+    else if (args[0].equals("cd")){
+      // information for the cd command
+      System.out.println("cd DIR: Change directory to DIR, which may be "
+          + "relative to the current directory or may be a full path.");
+    }
+    else if (args[0].equals("echo")){
+      // information for the echo command (many types)
+      System.out.println("echo 'STRING' [>[>] OUTFILE]: ");
+      System.out.println("If outfile is not provided, then simply print "
+          + "string onto the screen");
+      System.out.println("Otherwise, put STRING into file OUTFILE.");
+      System.out.println("STRING is a string of characters "
+          + "surrounded by double quotation marks.");
+      System.out.println("This creates a new file if OUTFILE does not "
+          + "exists and erases the old contents if OUTFILE already exits.");
+      System.out.println("In either case the only thing "
+          + "in OUTFILE should be STRING.");
+    }
+    else if (args[0].equals("cat")){
+      // information for the cat command
+      System.out.println("cat: Display the contents of a file in the shell");
+    }
+    else if (args[0].equals("cp")){
+      // information for the cp command
+      System.out.println("cp OLDPATH NEWPATH: Copy a file from OLDPATH"
+          + " to NEWPATH");
+    }
+    else if (args[0].equals("mv")){
+      // information for the mv command
+      System.out.println("mv OLDPATH NEWPATH: Move item OLDPATH "
+          + "to NEWPATH. Both OLDPATH"
+          + " and NEWPATH may be relative to the current working directory"
+          + " or full paths.");
+          System.out.println("If OLDPATH is a directory, move the item "
+              + "into a directory.");
+    }
+    else if (args[0].equals("exit")){
+      // information on how to exit the JShell
+      System.out.println("exit: Quits the program.");
+    }
+    else {
+      // if user requests info on a CMD that JShell does not have
+      System.out.println("man: No such command");
+    }
+    
+  }
+
+}

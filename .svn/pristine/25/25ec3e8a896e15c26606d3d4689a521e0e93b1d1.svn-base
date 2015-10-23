@@ -1,0 +1,12 @@
+What did I do last time?
+- Continue work on grep (found some issues)
+- Help out with fixing "extra line" issues with redirection
+- Remade makeCopy for Folder and File class
+- Fixed redirection issue for rm
+- Fixed cp class (did not duplicate files properly)
+
+What do I plan to do now?
+- Last minute things / bug fixes
+
+Am I blocked on anything?
+- No

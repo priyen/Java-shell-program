@@ -1,0 +1,12 @@
+Class name: FileSystem
+Parent class: Folder
+Subclasses: none
+
+Responsibilities:
+	- store working directory and print it if asked
+	- change working directory
+	- keep track of elements on root and manage all add/remove/setlocation operations
+
+Collaborators: 
+	- File
+	- Folder

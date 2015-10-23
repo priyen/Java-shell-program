@@ -1,0 +1,10 @@
+What did I do last time?
+- Meeting to discuss new parts of the project
+
+What do I plan to do now?
+- Make Ls work for rescursive flag
+- Redesign mkdir so that it returns a string
+- Redesign many classes to return string (to prepare for ">" use in commands).
+
+Am I blocked on anything?
+- A lot of classes were designed without consideration that ">" might be used in the future part of the project. (We didn't know 2B would have this and we wouldve designed classes differently if we knew this). This is causing a lot of issues at the moment.

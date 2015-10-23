@@ -1,0 +1,16 @@
+What did I do last time?
+- Helpout with mv command class
+- Try implementing some things from latest Lab into the assignment
+- Remove all .txt references in classes
+- Make mkdir no longer make paths on the go
+- Make containsIllegalCharacters method in mkdir
+- Check all classes obey 80 character limit
+- Made sure all error messages are consistent
+
+
+What do I plan to do now?
+- jUnit for mkdir, cd, pwd
+- Finalize project, finishing touches, comments, etc
+
+Am I blocked on anything?
+- Nothing, progress seemes good overall for the project

@@ -1,0 +1,9 @@
+What did I do last time?
+- Helpout with jShell as that is something I also need
+- Fixed mkdir to work properly with multiple arguments and also made it error when a path already exists, also made it make a path as you go along if it doesnt exist (eg make test3 in test2 for : test2/test3/test4 if test3 doesnt exist.
+
+What do I plan to do now?
+- Helpout with echo class
+
+Am I blocked on anything?
+- Nothing, progress seemes good overall for the project

@@ -1,0 +1,8 @@
+What did I do last time?
+	- Discussed possible designs for file system, which is what our file/folder database is based around.
+
+What do I plan to do now?
+	- Finalize one of two potential file system designs after which command class coding can begin
+
+Am I blocked on anything?
+	- FileSystem class, which stores the actual folder and file structure still need finalizing in order to base commmand classesaround.

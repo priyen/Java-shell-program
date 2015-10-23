@@ -1,0 +1,8 @@
+What did I do last time?
+	- Completed Junit for Ls, Cat, Cp and Mv Classes
+
+What do I plan to do now?
+	- Look into projects 2B once posted
+
+Am I blocked on anything?
+	- 

@@ -1,0 +1,13 @@
+Class name: JShell
+parent class: none
+subclass: none
+
+Responsibilities:
+	- prompts the user for command and executes it
+	- handling invalid inputs
+
+Collaborators:
+	- FileSystem
+	- CommandParser
+	
+	

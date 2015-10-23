@@ -1,0 +1,64 @@
+package driver;
+import java.util.ArrayList;
+import java.util.Iterator;
+
+public class outPrintStream {
+  static ArrayList<String> content = new ArrayList<String>();
+  static boolean canPrint = true;
+  
+  public static void printContent()
+  {
+    System.out.print(outPrintStream.getContent());
+  }
+  
+  public static void println(String s)
+  {
+    if (canPrint == false)
+    {
+      content.add("\n");
+      content.add(s);
+    }
+    else
+    {
+      System.out.println(s);
+    }
+  }
+  
+  public static void print(String s)
+  {
+    if (canPrint == false)
+    {
+      content.add(s);
+    }
+    else
+    {
+      System.out.print(s);
+    }
+  }
+  
+  public static void disablePrinting()
+  {
+    canPrint = false;
+  }
+  
+  public static String getContent()
+  {
+    String c = "";
+    Iterator<String> i = content.iterator();
+    while(i.hasNext())
+    {
+      c = c + i.next();
+    }
+    return c;
+  }
+  
+  public static void enablePrinting()
+  {
+    canPrint = true;
+  }
+  
+  public static void clearContent()
+  {
+    content.clear();
+  }
+}
